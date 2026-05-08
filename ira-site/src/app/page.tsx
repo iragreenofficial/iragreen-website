@@ -900,10 +900,17 @@ export default function Home() {
                           </h3>
 
                           {event.location && (
-                            <p className="mt-3 max-w-2xl text-sm text-zinc-500">
-                              {event.location}
-                            </p>
-                          )}
+                              <a
+                                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                                  event.location
+                                  )}`}
+                                  target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="mt-3 block max-w-2xl text-sm text-zinc-500 transition hover:text-green-400"
+                                   >
+                         {event.location}
+  </a>
+)}
                         </div>
 
                         {event.description ? (
