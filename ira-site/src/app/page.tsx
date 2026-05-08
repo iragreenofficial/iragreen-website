@@ -826,8 +826,15 @@ export default function Home() {
                 ].map(([label, value]) => (
                   <div
                     key={label}
-                    className="border border-white/10 bg-white/[0.03] p-5 backdrop-blur transition hover:border-green-400/40 hover:bg-green-400/[0.04]"
-                  >
+                      onClick={() => {
+                     if (label === t.bioCard1) {
+                     window.location.href = "#music";
+                  }
+  }}
+  className={`border border-white/10 bg-white/[0.03] p-5 backdrop-blur transition hover:border-green-400/40 hover:bg-green-400/[0.04] ${
+    label === t.bioCard1 ? "cursor-pointer" : ""
+  }`}
+>
                     <p className="text-[10px] uppercase tracking-[0.3em] text-zinc-600">
                       {label}
                     </p>
