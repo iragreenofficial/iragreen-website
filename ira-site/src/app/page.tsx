@@ -895,9 +895,16 @@ export default function Home() {
                             {formattedDate}
                           </p>
 
-                          <h3 className="mt-3 text-2xl font-black uppercase tracking-[0.08em]">
-                            {event.title}
-                          </h3>
+                          <a
+                            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                                  event.location || event.title
+                                  )}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="mt-3 block text-2xl font-black uppercase tracking-[0.08em] transition hover:text-green-400"
+                            >
+                         {event.title}
+</a>
 
                           {event.location && (
                               <a
