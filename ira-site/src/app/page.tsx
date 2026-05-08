@@ -193,7 +193,7 @@ export default function Home() {
       heroEyebrow: "Sito Ufficiale",
       heroClaim: "Voce rock. Nessun filtro. Nessuna scusa.",
       heroListen: "Ascolta",
-      heroBooking: "Info Concerti",
+      heroBooking: "Contatti",
 
       bioEyebrow: "Biografia",
       bioTitle1: "Nata per il palco.",
