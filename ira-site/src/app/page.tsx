@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { HiMenu, HiX, HiMail } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { lyricsAlbums } from "./data/lyrics";
 
 const reveal = {
   initial: { opacity: 0, y: 120, filter: "blur(12px)" },
@@ -45,6 +46,19 @@ type CartItem = Product & {
   size?: string;
 };
 
+type LyricsSong = {
+  title: string;
+  slug: string;
+  text: string;
+};
+
+type LyricsAlbum = {
+  title: string;
+  year: string;
+  image: string;
+  songs: LyricsSong[];
+};
+
 const shippingRates = {
   italy: { price: 7 },
   eu: { price: 25 },
@@ -65,10 +79,15 @@ export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cookieAccepted, setCookieAccepted] = useState(false);
   const [showAllEvents, setShowAllEvents] = useState(false);
+  const [selectedLyricsAlbum, setSelectedLyricsAlbum] =
+  useState<LyricsAlbum | null>(null);
+  const [selectedLyricsSong, setSelectedLyricsSong] =
+  useState<LyricsSong | null>(null);
 
   const t = {
     en: {
       navMusic: "Music",
+      navLyrics: "Lyrics",
       navConcerts: "Concerts",
       navShop: "Shop",
       navBio: "Bio",
@@ -165,6 +184,7 @@ export default function Home() {
     },
     it: {
       navMusic: "Musica",
+      navLyrics: "Testi",
       navConcerts: "Concerti",
       navShop: "Shop",
       navBio: "Bio",
@@ -480,6 +500,7 @@ export default function Home() {
               <nav className="hidden items-center gap-8 md:flex">
                 {[
                   [t.navMusic, "#music"],
+                  [t.navLyrics, "#lyrics"],
                   [t.navConcerts, "#live"],
                   [t.navShop, "#shop"],
                   [t.navBio, "#bio"],
@@ -595,6 +616,7 @@ export default function Home() {
                 <nav className="flex flex-1 flex-col justify-center gap-8">
                   {[
                     [t.navMusic, "#music"],
+                    [t.navLyrics, "#lyrics"],
                     [t.navConcerts, "#live"],
                     [t.navShop, "#shop"],
                     [t.navBio, "#bio"],
@@ -1106,6 +1128,79 @@ export default function Home() {
           </motion.div>
         </section>
 
+<section
+  id="lyrics"
+  className="relative z-10 overflow-hidden border-t border-white/10 bg-zinc-950 px-6 py-32 md:px-16"
+>
+  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(34,197,94,0.14),transparent_35%),radial-gradient(circle_at_80%_70%,rgba(255,255,255,0.05),transparent_30%)]" />
+
+  <motion.div {...reveal} className="relative mx-auto max-w-7xl">
+    <p className="mb-5 text-xs uppercase tracking-[0.45em] text-zinc-500">
+      {language === "it" ? "Testi" : "Lyrics"}
+    </p>
+
+    <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+      <div>
+        <h2 className="text-5xl font-black uppercase tracking-tight md:text-7xl">
+          {language === "it" ? "Parole che fanno rumore." : "Words that make noise."}
+        </h2>
+
+        <p className="mt-6 max-w-2xl text-zinc-400">
+          {language === "it"
+            ? "Testi, frammenti, rabbia e identità dall’universo Ira Green."
+            : "Lyrics, fragments, rage and identity from the Ira Green universe."}
+        </p>
+      </div>
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-3">
+    {lyricsAlbums.map((item) => (
+
+        <motion.button
+  key={item.title}
+  onClick={() => setSelectedLyricsAlbum(item)}
+  whileHover={{ y: -10 }}
+  transition={{ duration: 0.35 }}
+  className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-black/40 p-0 text-left transition hover:border-green-400/40"
+>
+         <div className="relative h-[360px] overflow-hidden">
+  <Image
+    src={item.image}
+    alt={item.title}
+    fill
+    className="object-cover opacity-70 transition duration-700 group-hover:scale-110 group-hover:opacity-100"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+
+  <div className="absolute inset-0 opacity-0 transition duration-700 group-hover:opacity-100 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.24),transparent_60%)]" />
+
+  <div className="absolute left-6 top-6 rounded-full border border-green-400/30 bg-black/50 px-4 py-2 text-[10px] font-black uppercase tracking-[0.25em] text-green-400 backdrop-blur">
+    {item.year}
+  </div>
+
+  <div className="absolute bottom-0 left-0 right-0 p-7">
+    <h3 className="text-3xl font-black uppercase leading-none tracking-tight">
+      {item.title}
+    </h3>
+
+    <p className="mt-4 text-sm leading-relaxed text-zinc-500">
+      {language === "it"
+        ? "Apri l’archivio testi dell’album."
+        : "Open the album lyrics archive."}
+    </p>
+
+    <span className="mt-7 inline-flex border border-white/20 px-5 py-3 text-xs font-black uppercase tracking-[0.25em] text-white transition group-hover:border-green-400 group-hover:bg-green-400 group-hover:text-black">
+      {language === "it" ? "Apri" : "Open"}
+    </span>
+  </div>
+</div>
+        </motion.button>
+      ))}
+    </div>
+  </motion.div>
+</section>
+
         <section
           id="shop"
           className="relative z-10 overflow-hidden bg-black px-6 py-32 md:px-16"
@@ -1203,6 +1298,162 @@ export default function Home() {
             </div>
           </motion.div>
         </section>
+
+{selectedLyricsAlbum && (
+  <div className="fixed inset-0 z-[105] flex items-center justify-center bg-black/90 px-6 backdrop-blur-2xl">
+    <button
+      onClick={() => setSelectedLyricsAlbum(null)}
+      className="absolute inset-0 cursor-default"
+      aria-label="Close lyrics modal"
+    />
+
+    <motion.div
+      initial={{ opacity: 0, scale: 0.92, y: 40 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+      className="relative z-10 grid w-full max-w-6xl overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-950 shadow-2xl shadow-black/80 md:grid-cols-[0.9fr_1.1fr]"
+    >
+      <div className="relative h-[420px] md:h-full">
+        <Image
+          src={selectedLyricsAlbum.image}
+          alt={selectedLyricsAlbum.title}
+          fill
+          className="object-cover"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+      </div>
+
+      <div className="relative p-8 md:p-10">
+        <button
+          onClick={() => setSelectedLyricsAlbum(null)}
+          className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/60 transition hover:border-green-400 hover:text-green-400"
+        >
+          <HiX size={22} />
+        </button>
+
+        <p className="mb-5 text-xs uppercase tracking-[0.35em] text-green-400">
+          {language === "it" ? "Archivio Testi" : "Lyrics Archive"}
+        </p>
+
+        <h3 className="text-5xl font-black uppercase leading-none tracking-tight">
+          {selectedLyricsAlbum.title}
+        </h3>
+
+        <p className="mt-4 text-sm uppercase tracking-[0.3em] text-zinc-500">
+          {selectedLyricsAlbum.year}
+        </p>
+
+        <div className="mt-10 max-h-[360px] space-y-4 overflow-y-auto pr-2">
+            {selectedLyricsAlbum.songs.map((song, index) => (
+            <button
+              key={song.title}
+                onClick={() => {
+                    window.location.href = `/lyrics/${song.slug}`;
+                  }}
+                  className="group flex w-full items-center justify-between border border-white/10 bg-black/30 px-5 py-5 text-left transition hover:border-green-400/40 hover:bg-green-400/5"
+                  >
+              <div className="flex items-center gap-5">
+                  <span className="text-xs font-black uppercase tracking-[0.25em] text-green-400/60">
+                      {String(index + 1).padStart(2, "0")}
+              </span>
+
+  <div>
+    <p className="text-lg font-black uppercase tracking-[0.08em] text-white transition group-hover:text-green-400">
+      {song.title}
+    </p>
+
+                    <p className="mt-1 text-xs uppercase tracking-[0.25em] text-zinc-600">
+                            {language === "it"
+                                    ? "Testo disponibile presto"
+                                            : "Lyrics available soon"}
+                    </p>
+  </div>
+</div>
+
+<span className="text-zinc-600 transition group-hover:translate-x-1 group-hover:text-green-400">
+                →
+              </span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  </div>
+)}
+
+{selectedLyricsSong && (
+  <div className="fixed inset-0 z-[108] flex items-center justify-center bg-black/95 px-6 backdrop-blur-3xl">
+    <button
+      onClick={() => setSelectedLyricsSong(null)}
+      className="absolute inset-0 cursor-default"
+      aria-label="Close lyrics"
+    />
+
+    <motion.div
+      initial={{ opacity: 0, scale: 0.96, y: 30 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.35 }}
+      className="relative z-10 w-full max-w-4xl overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-950 shadow-2xl shadow-black/80"
+    >
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.12),transparent_45%)]" />
+
+      <div className="relative max-h-[85vh] overflow-y-auto px-8 py-10 md:px-14 md:py-14">
+        <button
+          onClick={() => setSelectedLyricsSong(null)}
+          className="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/60 transition hover:border-green-400 hover:text-green-400"
+        >
+          <HiX size={22} />
+        </button>
+
+        <p className="text-xs uppercase tracking-[0.35em] text-green-400">
+  {language === "it" ? "Archivio Ufficiale" : "Official Archive"}
+</p>
+
+<h2 className="mt-5 text-5xl font-black uppercase leading-none tracking-tight md:text-7xl">
+  {selectedLyricsSong.title}
+</h2>
+
+<p className="mt-6 max-w-2xl text-sm italic leading-relaxed text-zinc-500">
+  {language === "it"
+    ? "Parole scritte tra rabbia, identità e distorsione."
+    : "Words written between rage, identity and distortion."}
+</p>
+
+        <div className="mt-10 h-px w-full bg-gradient-to-r from-green-400/40 via-white/10 to-transparent" />
+
+        <div className="mt-10 space-y-2 text-lg leading-relaxed text-zinc-300">
+  {selectedLyricsSong.text.split("\n").map((line, index) => {
+    const isSectionLabel = [
+      "intro",
+      "verse",
+      "pre-chorus",
+      "chorus",
+      "bridge",
+      "hook",
+      "outro",
+    ].includes(line.trim().toLowerCase());
+
+    return (
+      <p
+        key={`${line}-${index}`}
+        className={
+          isSectionLabel
+            ? "mt-8 text-xs font-black uppercase tracking-[0.35em] text-green-400"
+            : line.trim() === ""
+            ? "h-4"
+            : "text-zinc-300"
+        }
+      >
+        {line}
+      </p>
+    );
+  })}
+</div>
+      </div>
+    </motion.div>
+  </div>
+)}
 
         {selectedProduct && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 px-6 backdrop-blur-2xl">
@@ -1620,6 +1871,9 @@ export default function Home() {
                 </a>
                 <a href="#music" className="transition hover:text-white">
                   {t.navMusic}
+                </a>
+                <a href="#lyrics" className="transition hover:text-white">
+                {t.navLyrics}
                 </a>
                 <a href="#shop" className="transition hover:text-white">
                   {t.navShop}
