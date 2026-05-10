@@ -50,6 +50,7 @@ type LyricsSong = {
   title: string;
   slug: string;
   text: string;
+  hidden?: boolean;
 };
 
 type LyricsAlbum = {
@@ -1153,7 +1154,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="grid gap-6 md:grid-cols-3">
+    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
     {lyricsAlbums.map((item) => (
 
         <motion.button
@@ -1345,7 +1346,22 @@ export default function Home() {
         </p>
 
         <div className="mt-10 max-h-[360px] space-y-4 overflow-y-auto pr-2">
-            {selectedLyricsAlbum.songs.map((song, index) => (
+            {selectedLyricsAlbum.songs.filter((song) => !song.hidden).length === 0 && (
+  <div className="flex h-[220px] items-center justify-center border border-dashed border-white/10 bg-black/20 text-center">
+    <div>
+      <p className="text-xs font-black uppercase tracking-[0.35em] text-green-400">
+        Coming Soon
+      </p>
+
+      <h3 className="mt-4 text-3xl font-black uppercase text-white">
+        Out Thursday
+      </h3>
+    </div>
+  </div>
+)}
+            {selectedLyricsAlbum.songs
+              .filter((song) => !song.hidden)
+                .map((song, index) => (
             <button
               key={song.title}
                 onClick={() => {

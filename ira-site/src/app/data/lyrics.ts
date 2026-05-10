@@ -1078,7 +1078,7 @@ Ho un mondo senza regole ('cause she′s a music′s tramp)!`,
   },
   {
     title: "7",
-    year: "",
+    year: "2019",
     image: "/shop-7.jpg",
     songs: [
     {
@@ -1474,7 +1474,7 @@ sono la bestia che c'è in te`,
   },
   {
     title: "RE(be)LIGION",
-    year: "",
+    year: "2016",
     image: "/shop-rebeligion.jpg",
     songs: [
       {
