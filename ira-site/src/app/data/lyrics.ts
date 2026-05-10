@@ -1,5 +1,82 @@
 export const lyricsAlbums = [
   {
+  title: "Col Cazzo",
+  year: "2026",
+  image: "/col-cazzo-cover.jpg",
+  songs: [
+    {
+      title: "Col Cazzo",
+      slug: "col-cazzo",
+      hidden: true,
+      text: `chorus
+Andiamo a cena fuori? No!
+Scendiamo a bere insieme? No!
+A prendere un gelato?
+Oh! Ma mi vuoi ascoltare?
+
+Guardiamo la partita? No!
+Andiamo fuori in gita? No
+Al mare? A sciare?
+Si! Col cazzo!
+
+verse
+Ma perché?
+Insistete nel volermi sradicare da una situazione chill
+
+Dal mio concetto
+Di relax prendo atto che vostra energia
+Sia un po’ differente dalla mia 
+
+verse
+Io mi scoccio anche di sedermi a mangiare
+Ormai guardo reel per ore
+
+Mentre mi nutro sul divano accendo la tv
+Guardo una serie
+Ma chi sta meglio di me?
+
+chorus
+Andiamo a cena fuori? No!
+Scendiamo a bere insieme? No!
+A prendere un gelato?
+Oh! Ma mi vuoi ascoltare?
+
+Guardiamo la partita? No!
+Andiamo fuori in gita? No
+Al mare? A sciare?
+Si! Col cazzo!
+
+bridge
+Cosa c’è di più bello dell’apatia?
+Preferisco stare qui ad oziare
+
+Ma perché vi ostinate a volermi far uscire
+
+chorus
+Andiamo a cena fuori? No!
+Scendiamo a bere insieme? No!
+A prendere un gelato?
+Oh! Ma mi vuoi ascoltare?
+
+Guardiamo la partita? No!
+Andiamo fuori in gita? No
+Al mare? A sciare?
+Si! Col cazzo!
+
+chorus
+Andiamo a cena fuori? No!
+Scendiamo a bere insieme? No!
+A prendere un gelato?
+Oh! Ma mi vuoi ascoltare?
+
+Guardiamo la partita? No!
+Andiamo fuori in gita? No
+Al mare? A sciare?
+Si! Col cazzo!`,
+    },
+  ],
+},
+  {
     title: "Tutti i Colori dell’Ira",
     year: "2023",
     image: "/shop-colori.jpg",
@@ -2046,81 +2123,5 @@ I don't seek a land
 
     ],
   },
-  {
-    title: "Col Cazzo",
-    year: "2026",
-    image: "/col-cazzo-cover.jpg",
-    songs: [
-      {
-        title: "Col Cazzo",
-        slug: "col-cazzo",
-        hidden: true,
-text: `chorus
-Andiamo a cena fuori? No!
-Scendiamo a bere insieme? No!
-A prendere un gelato?
-Oh! Ma mi vuoi ascoltare?
-
-Guardiamo la partita? No!
-Andiamo fuori in gita? No
-Al mare? A sciare?
-Si! Col cazzo!
-
-verse
-Ma perché?
-Insistete nel volermi sradicare da una situazione chill
-
-Dal mio concetto
-Di relax prendo atto che vostra energia
-Sia un po’ differente dalla mia 
-
-verse
-Io mi scoccio anche di sedermi a mangiare
-Ormai guardo reel per ore
-
-Mentre mi nutro sul divano accendo la tv
-Guardo una serie
-Ma chi sta meglio di me?
-
-chorus
-Andiamo a cena fuori? No!
-Scendiamo a bere insieme? No!
-A prendere un gelato?
-Oh! Ma mi vuoi ascoltare?
-
-Guardiamo la partita? No!
-Andiamo fuori in gita? No
-Al mare? A sciare?
-Si! Col cazzo!
-
-bridge
-Cosa c’è di più bello dell’apatia?
-Preferisco stare qui ad oziare
-
-Ma perché vi ostinate a volermi far uscire
-
-chorus
-Andiamo a cena fuori? No!
-Scendiamo a bere insieme? No!
-A prendere un gelato?
-Oh! Ma mi vuoi ascoltare?
-
-Guardiamo la partita? No!
-Andiamo fuori in gita? No
-Al mare? A sciare?
-Si! Col cazzo!
-
-chorus
-Andiamo a cena fuori? No!
-Scendiamo a bere insieme? No!
-A prendere un gelato?
-Oh! Ma mi vuoi ascoltare?
-
-Guardiamo la partita? No!
-Andiamo fuori in gita? No
-Al mare? A sciare?
-Si! Col cazzo!`,
-      },
-    ],
-  },
+  
 ];
