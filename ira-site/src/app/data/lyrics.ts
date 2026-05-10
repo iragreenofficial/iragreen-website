@@ -1470,8 +1470,657 @@ non sfidare la sorte perché sono una bestia
 non dirmi che sei anche comprensiva
 sono la bestia che c'è in te`,
 },
+],
+  },
+  {
+    title: "RE(be)LIGION",
+    year: "",
+    image: "/shop-rebeligion.jpg",
+    songs: [
+      {
+  title: "You've Got the Sun",
+  slug: "youve-got-the-sun",
+  text: `verse
+Please don′t close yourself in a cage
+Just because some people live for your pain
 
-// qui incolliamo i testi di 7
+Weapons of ignorance are ends in themselves
+Are easy to use but they kidnap your mind
+
+pre-chorus
+Don't waste your time closing your wounds
+With the same needle that you used to sew memories
+
+Don′t deprive yourself of a breath
+Let the sea breeze just start healing your soul
+
+chorus
+'cause you've got the sun
+And no one will ever steal it from you
+
+′cause you′ve got the light
+And no one will ever be like you
+
+verse
+Life follows the metric of a chess game
+If you've got no experience, you become the prey
+
+A punch in the wall of your room will not make you free
+From all these tears and these nightmares
+
+pre-chorus
+Don′t waste your time crying ash
+Drop your sword and face your greatest fear
+
+Caress your dreams with the awareness
+That you have all that's required to go on in this life
+
+chorus
+′cause you've got the sun
+And no one will ever steal it from you
+
+′cause you've got the light
+And no one will ever be like you
+
+outro
+'cause you′ve got the sun
+′cause you've got the sun
+′cause you've got the sun
+′cause you've got the sun`,
+},
+
+{
+  title: "Hello Good Day",
+  slug: "hello-good-day",
+  text: `verse
+I woke up today, I walked barefoot ′round home
+The cold floor didn't bother me
+
+A light came from the window
+And my eyes are tired
+I hope for a good day
+
+chorus
+Hello good day
+I′m here
+I'm waiting for you
+
+verse
+Hello Mr. Mirror
+I feel so happy today 'cause I′m living
+
+I hear my guitar, is playing alone
+Why are you so sad?
+
+The sun is shining and you can breathe
+What more do you want?
+
+chorus
+Hello good day
+I′m here
+I'm with you
+
+Hello good day
+I′m here
+I'm with you
+
+bridge
+No one can waste my good day, yeah
+It could be a great damage
+
+chorus
+Hello good day
+I′m here
+I'm with you
+
+Hello good day
+I′m here
+I'm with you`,
+},
+
+{
+  title: "Gravity Soldier",
+  slug: "gravity-soldier",
+  text: `verse
+Wherever you will go there will be an antagonist
+Whatever you will touch in return you′ll get a fist
+
+bridge
+You go on
+And don't give up
+
+So come on
+Don′t give a fuck
+
+verse
+Just a few rights will take care of your dreams
+Many want to kick your ass to be in the lead
+
+bridge
+You go on
+And don't give up
+
+So come on
+Don't give a fuck
+
+chorus
+Load your gun
+Don′t let them push you away
+
+Just have fun
+Don′t forget to live the same
+
+Gravity soldier are you ready to start and fly
+I'm your teacher
+First step: Is free your mind
+
+verse
+You′re too much rationale for a world like this
+You're too much cynical to believe in peace
+
+bridge
+You go on
+Don′t give up
+
+So come on
+Let's live fine
+
+chorus
+Load your gun
+Don′t let them push you away
+
+Just have fun
+Don't forget to live the same
+
+Gravity soldier are you ready to start and fly
+I'm your teacher
+First step: Is free your mind
+
+outro
+Gravity soldier
+Gravity soldier
+Gravity soldier
+Gravity soldier
+
+First step is free your mind`,
+},
+
+{
+  title: "I'm Wrong",
+  slug: "im-wrong",
+  text: `verse
+Things are changin′ all around
+Focused on the life that since now I have done
+
+In silence, I can hear my mind screamin' loud
+At night I feel my heart beatin′ like a gun
+
+pre-chorus
+And I'm more than just meat
+Attacked on white bones
+
+I love like a child, I don't choose one by one
+
+chorus
+And I′m blame
+And I′m wrong
+
+I got faith
+And I'm strong
+
+I go on my own
+′Cause I'm not scared of anyone!
+
+verse
+I never had plans
+I follow myself like a soul in a fool′s dance
+
+You should remember when you were like me
+You should turn back time, open your eyes and see
+
+pre-chorus
+And I'm more than just meat
+Attacked on white bones
+
+I love like a child, I don′t choose one by one
+
+I'm gonna fill your head
+With all the people's thoughts
+
+′Cause I don′t care
+I'm not their stupid toy!
+
+chorus
+′Cause I'm blame
+And I′m wrong
+
+I got faith
+And I'm strong
+
+I go on my own
+′Cause I'm not scared of anyone Yeah!
+
+'Cause I′m blame
+And I′m wrong
+
+I got faith
+And I'm strong
+
+I go on my own
+′Cause I'm not scared of anyone
+
+′Cause I'm blame
+And I′m wrong
+
+I got faith
+And I'm strong
+
+I go on my own
+'Cause I′m not scared of anyone`,
+},
+
+{
+  title: "Love Can Stop the Rain",
+  slug: "love-can-stop-the-rain",
+  text: `verse
+The pain is gone and I don′t know how
+What I have unleashed
+
+My head is rising from the down
+Brings me to your dreams
+
+chorus
+Love is never in vain
+Love can stop the rain
+
+And your soul will learn to fly
+With love's wings she will never die
+
+bridge
+I hold you in my arms
+With you I have nothin′ to hide
+
+verse
+All this time I looked for you
+Walkin' with my chains
+
+Goin' on without any rules
+With no blood in my veins
+
+hook
+Love ya
+
+chorus
+Love is never in vain
+Love can stop the rain
+
+And your soul will learn to fly
+With love′s wings she will never die`,
+},
+
+{
+  title: "I'm Still Calling You",
+  slug: "im-still-calling-you",
+  text: `chorus
+I, I′m still calling you
+Here where dreams become true
+
+verse
+I found it in my head
+There's no time
+
+Where all bad things are dead
+Makes you proud
+
+And all you got this morning it′s your cry
+Asking help, still blind
+
+Lying to the people "I'm fine"
+Bleeding from inside
+
+chorus
+I, I'm still calling you
+Here where dreams become true
+
+verse
+I′ve rescinded my soul just for you
+Selling my fool dreams to the moon
+
+I′ve been waiting out that door for so long
+Feeling the frost in my bones
+
+I've attended at your feast where all
+Were dancing above you′re throne
+
+chorus
+I, I'm still calling you
+Here where dreams become true
+
+I, I′m still calling you
+Here where dreams become true`,
+},
+
+{
+  title: "You Can't Control Me",
+  slug: "you-cant-control-me",
+  text: `verse
+I′m no longer happy when I see your face, I want to punch it down
+You can fake your feelings, make the world stop bleeding,
+But I'm like a crazy horse right now
+
+I know better, yes, now I live better
+When I hear you spitting lies to others
+
+About all my life, ′bout all your nice
+Things you've done, you're in the wrong way bro
+
+Try to figure it out, try to scream and shout,
+Try to change your mind and your mood
+
+I don′t like tears, I love my fears
+You′re so happy to be rude
+
+Buying souls, you're so false
+You′re ugly to death you live to lose.
+
+Embrace your sort, you're in fault.
+Fuck my life, I can′t choose...
+
+pre-chorus
+Hurry up, I'm no longer happy now
+Time runs out
+
+chorus
+Now you can′t control me and you don't know why!
+
+verse
+Pay your price, don't be a fool
+That′s how life gives you rules
+
+I′m out of that, I'm too wild
+Now go swimming in a shit pool...
+
+bridge
+I don′t need your face around, you fuckin dumb
+
+chorus
+Now you can't control me and you don′t know why!
+
+pre-chorus
+Hurry up, I'm not longer happy now
+Time runs out
+
+chorus
+Now you can′t control me and you don't know why!`,
+},
+
+{
+  title: "Fall Asleep",
+  slug: "fall-asleep",
+  text: `verse
+Time, you′re makin' me old and now I decided to die
+Without your help in my childhood bed
+
+How can I escape this taste inside my mouth
+Without your lips here by my side
+
+Fall, that′s what I've done since you've left me here alone
+Walkin′ round home with no place that I belong
+
+Helping myself to surrender to everyone
+Wishin′ that you could hear me mourn
+
+chorus
+And I want to leave
+But I won't tell I want to die to anyone
+I fall asleep
+With no tears that can cry out from my eyes
+
+verse
+Hi, can you still hear me in this annoying world?
+I found here a picture of you from the teenage time
+
+My mind is so close to goin′ across this line
+That tears us apart without a reason why
+
+chorus
+And I want to leave
+But I won't tell I want to die to anyone
+I fall asleep
+With no tears that I can cry out from my
+Eyes
+Eyes
+Eyes
+outro
+Mine, this cold old pillow now with me here lays
+I just leave my body here and I say goodbye`,
+},
+
+{
+  title: "RE(be)ligion",
+  slug: "rebeligion",
+  text: `verse
+Swallow your pill, I don′t need this reality
+Throwing rocks against me won't save you from the hell
+
+Maybe you′re right but I need to get high
+
+pre-chorus
+I need to get high
+I need to get high
+
+chorus
+Moon's brings you light
+The woods are quiet
+
+I don't like time
+Ask someone else to hear you words
+Out from this line
+
+verse
+How long your eyes have to stare at me, still?
+Enemies around me, and I still don′t care
+
+Fading voices I need to get high
+
+pre-chorus
+I need to get high
+I need to get high
+
+chorus
+Moon′s brings you light
+The woods are quiet
+
+I don't like time
+Ask someone else to hear your words
+Out from this line
+
+Moon′s brings you light (I WANT TO BE FREE)
+The woods are quiet
+
+I don't like time
+Ask someone else to hear your words
+Out from this line`,
+},
+
+{
+  title: "Light from Your Eyes",
+  slug: "light-from-your-eyes",
+  text: `verse
+Has nobody ever seen you cry?
+I never asked
+
+When I′ll ask you that I think then you will deny, but it's ok
+
+I see your sweet black eyes and I fall down
+How can I talk to you about thoughts that I hide with music
+
+People can tell me you′re a fool, but I'm not scared
+I know you give the best of you in all that you do.
+
+This song is written from my head, speaks about ya
+And of all the things that I think, but I don't know ya
+
+I hope we can talk more one of these days
+They′re simple and honest words that I wrote
+
+It′s something that stops me so
+Maybe I'm only crazy
+
+What shall I do right now?
+Only stay in hush
+
+bridge
+This world can be so cruel
+Just one word to steal your mind
+
+When someone hopes you die
+I′ll save with a smile
+
+chorus
+Low light from your eyes
+Sign that you are wise
+
+But sometimes you are so closed
+Maybe you try to dose
+
+Your essence seems my own
+I think no one can be like you`,
+},
+
+{
+  title: "Music's Tramp",
+  slug: "musics-tramp",
+  text: `verse
+Hey you can′t you hear the bells?
+Something happens, I'm goin′ to tell
+
+What I think about you mind
+Maybe you're grown but you're still blind
+
+I don′t know if it′s a blame
+But I don't care about the fame
+
+I want just communicate
+But you don′t understand so it's too late
+
+chorus
+I want to live
+I want to stay
+
+I don′t seek a land
+'Cause I′m a Music's tramp
+
+verse
+Hey you what that fuck you said?
+You're heavy force begin to fade
+
+Why should I listen to you
+While you′re trying just to lie, you do
+
+I′ll go on with my fantasy
+Without any fear or agony
+
+Please don't say "You′re a friend of mine"
+'Cause I don′t trust you I just wasted time
+
+chorus
+I want to live
+I want to stay
+
+I don't seek a land
+′Cause I'm a music's tramp
+
+I want to live
+I want to stay
+
+I don′t seek a land
+′Cause I'm a music′s tramp
+
+I want to live
+I want to stay
+
+I don't seek a land
+′Cause I'm a music′s tramp`,
+},
+
+    ],
+  },
+  {
+    title: "Col Cazzo",
+    year: "2026",
+    image: "/col-cazzo-cover.jpg",
+    songs: [
+      {
+        title: "Col Cazzo",
+        slug: "col-cazzo",
+        hidden: true,
+text: `chorus
+Andiamo a cena fuori? No!
+Scendiamo a bere insieme? No!
+A prendere un gelato?
+Oh! Ma mi vuoi ascoltare?
+
+Guardiamo la partita? No!
+Andiamo fuori in gita? No
+Al mare? A sciare?
+Si! Col cazzo!
+
+verse
+Ma perché?
+Insistete nel volermi sradicare da una situazione chill
+
+Dal mio concetto
+Di relax prendo atto che vostra energia
+Sia un po’ differente dalla mia 
+
+verse
+Io mi scoccio anche di sedermi a mangiare
+Ormai guardo reel per ore
+
+Mentre mi nutro sul divano accendo la tv
+Guardo una serie
+Ma chi sta meglio di me?
+
+chorus
+Andiamo a cena fuori? No!
+Scendiamo a bere insieme? No!
+A prendere un gelato?
+Oh! Ma mi vuoi ascoltare?
+
+Guardiamo la partita? No!
+Andiamo fuori in gita? No
+Al mare? A sciare?
+Si! Col cazzo!
+
+bridge
+Cosa c’è di più bello dell’apatia?
+Preferisco stare qui ad oziare
+
+Ma perché vi ostinate a volermi far uscire
+
+chorus
+Andiamo a cena fuori? No!
+Scendiamo a bere insieme? No!
+A prendere un gelato?
+Oh! Ma mi vuoi ascoltare?
+
+Guardiamo la partita? No!
+Andiamo fuori in gita? No
+Al mare? A sciare?
+Si! Col cazzo!
+
+chorus
+Andiamo a cena fuori? No!
+Scendiamo a bere insieme? No!
+A prendere un gelato?
+Oh! Ma mi vuoi ascoltare?
+
+Guardiamo la partita? No!
+Andiamo fuori in gita? No
+Al mare? A sciare?
+Si! Col cazzo!`,
+      },
     ],
   },
 ];
