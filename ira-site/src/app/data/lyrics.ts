@@ -1076,4 +1076,402 @@ Ho un mondo senza regole ('cause she′s a music′s tramp)!`,
 
 ],
   },
+  {
+    title: "7",
+    year: "",
+    image: "/shop-7.jpg",
+    songs: [
+    {
+  title: "Fuori Controllo (Lussuria)",
+  slug: "fuori-controllo-lussuria",
+  text: `verse
+Non vedi che vivo di guai, ormai?
+Io sono fatta di gloria e dolore
+Io viaggio distante da ogni pudore
+
+chorus
+Il tempo qui non mi basta
+C′è chi va via e chi resta
+La voglia qui mi sovrasta
+Non cerco amore
+
+verse
+Sentiam la testa scoppiarci tra le mani
+Ossessionati da sesso e pensieri insani
+
+Ma il tempo qui non mi basta
+C'è chi va via e chi resta
+La voglia qui mi sovrasta
+Invoco solo malizia
+
+bridge
+Io non ho paura di me
+Io non ho paura di me
+Io non ho paura di me
+Io non ho paura di me
+Io non ho paura di me
+Io non ho paura di me
+
+chorus
+Il tempo qui non mi basta
+C′è chi va via e chi resta
+La voglia qui mi sovrasta
+Ha scelto proprio me
+
+outro
+Io non ho guinzaglio
+Io non ho controllo
+Io sento solo il fuoco che freme in me`,
+},
+
+{
+  title: "Icaro (Superbia)",
+  slug: "icaro-superbia",
+  text: `verse
+Ma perché fingere se poi
+È irrefrenabile
+La voglia di salire su di un trono
+Guardarvi tutti da lassù
+Come topi in preda alle aquile
+Nella vostra mediocrità
+Incline alla pazzia
+
+pre-chorus
+Se solo voi riusciste a capire
+Quanto fa male sentirsi superiore
+
+chorus
+io ho, delle ali d′oro
+io ho, senso dell'humor
+io ho, voce nel coro
+voi sembrate dei film già visti!
+
+io ho, la luce del sole
+io ho, una vista migliore
+io ho, una missione
+rendervi un poco tristi!
+
+verse
+Mi dispiace ma tempo non ho
+Per ascoltare le tue storie
+Piene di tutto ciò che io eviterei
+
+Ne prendo atto, già lo so
+Sono un essere disprezzabile
+Che nasconde la sua realtà
+Dietro megalomanie
+
+bridge
+La vostra vita è così vera
+Che mi fa impazzire
+
+Non posso sopportare
+Di non ottenere quel grande stupore
+
+Mentre vi racconto
+Tutte le cazzate a cui non so mettere un punto!
+
+È uno stato mentale, dove puoi affogare
+È una droga sottile, senza inizio né fine
+
+chorus
+io ho, delle ali d′oro
+io ho, senso dell'humor
+io ho, voce nel coro
+voi sembrate dei film già visti!
+
+io ho, la luce del sole
+io ho, una vista migliore
+io ho, una missione
+rendervi un poco tristi!`,
+},
+
+{
+  title: "Giù (Accidia)",
+  slug: "giu-accidia",
+  text: `verse
+Quante opportunità che offre la vita
+Io preferisco sempre una vita d′uscita
+Neanche un impegno so rispettare
+Sono l'ostaggio del mio dolce oziare
+
+pre-chorus
+Perché mai sprecare le proprie energie?
+Scelgo di affondare nelle mie bugie!
+
+chorus
+giù, steso nel mio letto
+...ancora
+giù, il mio morale non è alle stelle
+giù, un peso sul mio petto
+...ancora
+giù, benvenuti al mio inferno
+
+verse
+La gente impazzisce per così dire
+All′idea di trovarsi qualcosa da fare
+
+Io NO!
+Io NO!
+Preferisco stare ferma... yeah!
+
+pre-chorus
+Voglio evitare di muovermi o parlare
+Faccio un po' fatica anche a respirare
+
+chorus
+giù, steso nel mio letto
+...ancora
+giù, il mio morale non è alle stelle
+giù, un peso sul mio petto
+...ancora
+giù, benvenuti al mio inferno
+
+giù, steso nel mio letto
+...ancora
+giù, il mio morale non è alle stelle
+giù, un peso sul mio petto
+...ancora
+giù, benvenuti al mio inferno`,
+},
+
+{
+  title: "Indievidia (Invidia)",
+  slug: "indievidia-invidia",
+  text: `verse
+Nel mio paese è artista
+Anche l′ultimo dei fessi
+Che pensa a fare accordi nuovi
+E invece son gli stessi
+
+Col baffo un poco vintage
+Giacca a quadri e le bretelle
+Coi mocassini al piede e
+Quando suonan fan le felle
+
+Tu prendine uno a caso
+Che fa musica un po' indie
+Con quei synth anni ′80
+Porca vacca quanto vendi
+
+Con l'aspetto trascurato
+Un poco da radical chic
+"E lo fai per te stesso
+O forse solo per i click?"
+
+pre-chorus
+...e mentre io affanno per comporre una canzone
+Cercando nuovi modi per stupire le persone
+
+Tu avrai scritto già almeno sei o sette pezzi
+Con testi alquanto futili... e tu vuoi che non mi incazzi?
+
+Però devo dire che effettivamente io
+
+chorus
+VI INVIDIO
+La verità è che
+VI INVIDIO
+La verità è che
+VI INVIDIO
+La verità è che
+VI INVIDIO
+
+verse
+Scusate per lo sfogo
+Ma io non ce la faccio
+A far tutta una canzone
+Col naso da pagliaccio
+
+Non voglio esagerare
+Né recare offesa alcuna
+Ma non v'ascolterei
+Manco fossi sulla luna
+
+pre-chorus
+Far tutto da soli è la vera indipendenza
+Senza un ufficio stampa che ti impone ciò che pensa
+
+Con tempi ancestrali e come un treno lento
+Raggiungerò il mio sogno, scrivendo ciò che sento
+
+Ma è inutile prendersi in giro, devo ammettere il mio peccato
+
+chorus
+VI INVIDIO
+La verità è che
+VI INVIDIO
+La verità è che
+VI INVIDIO
+La verità è che
+VI INVIDIO
+
+La verità è che
+VI INVIDIO
+La verità è che
+VI INVIDIO
+La verità è che
+VI INVIDIO
+La verità è che
+VI INVIDIO
+La verità è che
+VI INVIDIO`,
+},
+
+{
+  title: "Diverso da me (Avarizia)",
+  slug: "diverso-da-me-avarizia",
+  text: `verse
+Prendere o lasciare
+quel che io offro a te
+è il minimo indispensabile
+che a me non possa nuocere
+
+Chiudo gli occhi sull′aiuto che tu
+hai chiesto alle mie tasche
+che solo mosche sanno offrirti
+
+pre-chorus
+Tu mi tendi la tua mano ma io son devoto al Dio Denaro...
+
+chorus
+non guardarmi così
+non sei diverso da me
+tu hai paura di te stesso
+anche amare ha il suo prezzo
+
+io non rischio perché
+ho solo voglia di possesso!
+
+verse
+Tenti di scappare
+credi che sia un addio
+alle tue vecchie abitudini
+alle cose che credi inutili
+
+Lascia stare, ci provai anche io
+a rendermi migliore ma
+al mondo non c'è ragione di...
+
+pre-chorus
+...rifiutare la propria essenza
+tanto il mondo è pieno di indifferenza
+
+chorus
+non guardarmi così
+non sei diverso da me
+tu hai paura di te stesso
+anche amare ha il suo prezzo
+
+io non rischio perché
+ho solo voglia di possesso!
+
+non guardarmi così
+non sei diverso da me
+tu hai paura di te stesso
+anche amare ha il suo prezzo
+
+io non rischio perché
+ho solo voglia di possesso!`,
+},
+
+{
+  title: "Cristallo (Gola)",
+  slug: "cristallo-gola",
+  text: `verse
+Tu non sei altro che male
+Un parassita che vive di me
+Ti sazi del mio soffrire
+Non ha importanza nemmeno il perché
+
+Ombra dai passi silenti
+Mi divori da dentro e già sai
+Che non oppongo più resistenza
+E i bei ricordi sbiadiscono ormai
+
+chorus
+gabbia sei tu
+che mi trasforma in cristallo
+
+bridge
+Vorrei dire no, liberarmi da ciò
+Un′anima vera, che pace non trova
+
+verse
+Sono anni che provo ad urlare
+Ma la mia voce non ha un suono più
+
+Io non sento il calore del sole
+Ma il gelo che mi trascina all'ingiù
+
+Evito anche gli specchi
+Non vivo affatto di vanità
+
+La mia prigione è qualcosa di peggio
+E piano il cuore si addormenterà
+
+chorus
+gabbia sei tu
+che mi trasforma in cristallo
+
+gabbia sei tu
+che mi imprigiona in un ballo
+
+gabbia sei tu
+che mi trasforma in cristallo
+
+gabbia sei tu
+che mi imprigiona in un ballo`,
+},
+
+{
+  title: "La bestia (Ira)",
+  slug: "la-bestia-ira",
+  text: `verse
+Tu perdi tempo se cerchi di entrare
+Nella mia testa non ti puoi accomodare
+
+Sono pericolosa e non è un modo di dire
+"Non faccio prigionieri" è il mio modo di agire
+
+pre-chorus
+Ti sento insicura, c′è qualcosa che ti fa paura?
+
+chorus
+non dirmi di calmarmi o perdo la testa
+non sfidare la sorte perché sono una bestia
+
+non dirmi che sei anche comprensiva
+non sfidare la mia forza distruttiva
+
+bridge
+Sono un poco aggressiva
+Sento l'odore del tuo puro terrore
+
+C′è anche da dire che io soffro e non vedi
+Le ferite son vere anche se non ci credi
+
+hook
+Non abbandonarmi, proverò a fermarmi
+Io non ho luce, io non ho un sole
+
+Non ho speranze, prova tu a salvarmi
+
+chorus
+ma non dirmi di calmarmi o perdo la testa
+non sfidare la sorte perché sono una bestia
+
+non dirmi che sei anche comprensiva
+non sfidare la mia forza distruttiva
+
+non dirmi di calmarmi o perdo la testa
+non sfidare la sorte perché sono una bestia
+
+non dirmi che sei anche comprensiva
+sono la bestia che c'è in te`,
+},
+
+// qui incolliamo i testi di 7
+    ],
+  },
 ];

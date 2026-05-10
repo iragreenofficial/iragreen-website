@@ -1363,11 +1363,7 @@ export default function Home() {
       {song.title}
     </p>
 
-                    <p className="mt-1 text-xs uppercase tracking-[0.25em] text-zinc-600">
-                            {language === "it"
-                                    ? "Testo disponibile presto"
-                                            : "Lyrics available soon"}
-                    </p>
+
   </div>
 </div>
 
