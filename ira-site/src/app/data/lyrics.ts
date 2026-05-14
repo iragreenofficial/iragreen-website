@@ -7,7 +7,7 @@ export const lyricsAlbums = [
     {
       title: "Col Cazzo",
       slug: "col-cazzo",
-      hidden: true,
+      hidden: false,
       text: `chorus
 Andiamo a cena fuori? No!
 Scendiamo a bere insieme? No!
