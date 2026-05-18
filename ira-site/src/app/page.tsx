@@ -1670,12 +1670,12 @@ export default function Home() {
               transition={{ duration: 0.35, ease: "easeOut" }}
               className="relative z-10 flex h-full w-full max-w-xl flex-col border-l border-white/10 bg-zinc-950 shadow-2xl shadow-black"
             >
-              <div className="flex items-center justify-between border-b border-white/10 p-6">
+              <div className="flex items-start justify-between border-b border-white/10 px-6 py-4 md:p-6">
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-[0.3em] text-green-400">
                     Ira Green Shop
                   </p>
-                  <h3 className="mt-2 text-3xl font-black uppercase">
+                  <h3 className="mt-1 text-3xl font-black uppercase">
                     {t.cart}
                   </h3>
 <button
