@@ -1685,7 +1685,9 @@ export default function Home() {
   }}
   className="mt-2 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-500 transition hover:text-green-400 md:mt-4 md:w-fit md:border md:border-white/15 md:px-4 md:py-2 md:text-[10px] md:text-white/60 md:hover:border-green-400 md:hover:bg-green-400 md:hover:text-black"
 >
-  {language === "it" ? "Torna allo shop" : "Back to shop"}
+  {language === "it"
+  ? "← Torna allo shop"
+  : "← Back to shop"}
 </button>                  
                 </div>
 
