@@ -1121,7 +1121,7 @@ export default function Home() {
             <div className="mt-16 overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-950/70 p-3 shadow-2xl shadow-black/70">
               <iframe
                 data-testid="embed-iframe"
-                className="rounded-[1.5rem]"
+                className="hidden rounded-[1.5rem] md:block"
                 src="https://open.spotify.com/embed/track/2LOgrClSww8uk0Qq31bLuo?utm_source=generator"
                 width="100%"
                 height="352"
@@ -1130,6 +1130,14 @@ export default function Home() {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
+              <a
+                href="https://open.spotify.com/intl-it/track/2LOgrClSww8uk0Qq31bLuo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-[1.5rem] border border-green-400/40 px-6 py-5 text-center text-xs font-black uppercase tracking-[0.25em] text-green-400 transition hover:bg-green-400 hover:text-black md:hidden"
+                >
+                Ascolta Col Cazzo su Spotify
+              </a>
             </div>
           </motion.div>
         </section>
