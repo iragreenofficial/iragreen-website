@@ -1479,9 +1479,9 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.92, y: 40 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.35, ease: "easeOut" }}
-              className="relative z-10 grid w-full max-w-5xl overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-950 shadow-2xl shadow-black/80 md:grid-cols-2"
+              className="relative z-10 grid max-h-[92vh] w-full max-w-5xl overflow-y-auto rounded-[2rem] border border-white/10 bg-zinc-950 shadow-2xl shadow-black/80 md:grid-cols-2"
             >
-              <div className="relative h-[420px] md:h-full">
+              <div className="relative h-[260px] md:h-full">
                 <Image
                   src={selectedProduct.image}
                   alt={selectedProduct.title}
