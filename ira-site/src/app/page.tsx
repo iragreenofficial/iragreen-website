@@ -610,7 +610,7 @@ export default function Home() {
           <div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(circle_at_center,transparent_0%,black_92%)]" />
           <div className="pointer-events-none absolute inset-0 z-[3] bg-[linear-gradient(115deg,rgba(34,197,94,0.08),transparent_28%,transparent_70%,rgba(255,255,255,0.03))]" />
 
-          <header className="fixed left-0 top-0 z-50 w-full px-4 py-4 md:px-8">
+          <header className="absolute left-0 top-0 z-50 w-full px-4 py-4 md:px-8">
             <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-black/40 px-5 py-3 shadow-2xl shadow-black/60 backdrop-blur-2xl">
               <a href="#top" className="group flex items-center">
                 <Image
