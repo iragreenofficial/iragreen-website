@@ -455,7 +455,9 @@ export default function Home() {
       <main className="relative min-h-screen overflow-x-hidden bg-black text-white selection:bg-green-400 selection:text-black">
         <button
           onClick={() => setMenuOpen(true)}
-          className="fixed right-4 top-4 z-[999] flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/75 text-white shadow-2xl shadow-black/70 backdrop-blur-xl md:hidden"
+          className={`fixed right-4 top-4 z-[999] h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/75 text-white shadow-2xl shadow-black/70 backdrop-blur-xl md:hidden ${
+            cartOpen ? "hidden" : "flex"
+          }`}
           aria-label="Open menu"
           >
   <HiMenu size={22} />
@@ -1676,6 +1678,15 @@ export default function Home() {
                   <h3 className="mt-2 text-3xl font-black uppercase">
                     {t.cart}
                   </h3>
+<button
+  onClick={() => {
+    setCartOpen(false);
+    document.getElementById("shop")?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="mt-4 border border-white/15 px-4 py-2 text-[10px] font-black uppercase tracking-[0.22em] text-white/60 transition hover:border-green-400 hover:bg-green-400 hover:text-black"
+>
+  {language === "it" ? "Torna allo shop" : "Back to shop"}
+</button>                  
                 </div>
 
                 <button
