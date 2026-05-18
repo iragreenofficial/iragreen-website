@@ -1325,7 +1325,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
       </div>
 
-      <div className="relative p-8 md:p-10">
+      <div className="relative max-h-[92vh] overflow-y-auto p-6 pb-28 md:p-10 md:pb-10">
         <button
           onClick={() => setSelectedLyricsAlbum(null)}
           className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/60 transition hover:border-green-400 hover:text-green-400"
@@ -1591,7 +1591,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                <div className="sticky bottom-0 -mx-6 mt-8 flex flex-col gap-4 border-t border-white/10 bg-zinc-950/95 p-6 backdrop-blur sm:flex-row md:static md:mx-0 md:border-0 md:bg-transparent md:p-0">
                   <button
                     onClick={() => addToCart(selectedProduct)}
                     className="bg-green-400 px-7 py-4 text-center text-xs font-black uppercase tracking-[0.25em] text-black transition hover:bg-white"
