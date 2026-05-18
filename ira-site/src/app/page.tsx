@@ -460,6 +460,124 @@ export default function Home() {
           >
   <HiMenu size={22} />
 </button>
+                    {menuOpen && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 z-[1000] flex min-h-screen flex-col bg-black/95 px-8 py-8 backdrop-blur-2xl md:hidden"
+              >
+                <div className="mb-16 flex items-center justify-between">
+                  <Image
+                    src="/ira-logo.png"
+                    alt="Ira Green"
+                    width={56}
+                    height={56}
+                    className="h-12 w-auto"
+                  />
+
+                  <button
+                    onClick={() => setMenuOpen(false)}
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white"
+                    aria-label="Close menu"
+                  >
+                    <HiX size={24} />
+                  </button>
+                </div>
+
+                <nav className="flex flex-1 flex-col justify-center gap-8">
+                  {[
+                    [t.navMusic, "#music"],
+                    [t.navLyrics, "#lyrics"],
+                    [t.navConcerts, "#live"],
+                    [t.navShop, "#shop"],
+                    [t.navBio, "#bio"],
+                    [t.navBooking, "#booking"],
+                  ].map(([label, href]) => (
+                    <a
+                      key={label}
+                      href={href}
+                      onClick={() => setMenuOpen(false)}
+                      className="text-5xl font-black uppercase tracking-tight text-white transition hover:text-green-400"
+                    >
+                      {label}
+                    </a>
+                  ))}
+
+                  <div className="flex w-fit overflow-hidden rounded-full border border-white/10 bg-white/5 text-xs font-black uppercase tracking-[0.2em]">
+                    <button
+                      onClick={() => setLanguage("en")}
+                      className={`px-5 py-3 transition ${
+                        language === "en"
+                          ? "bg-green-400 text-black"
+                          : "text-white/50"
+                      }`}
+                    >
+                      EN
+                    </button>
+                    <button
+                      onClick={() => setLanguage("it")}
+                      className={`px-5 py-3 transition ${
+                        language === "it"
+                          ? "bg-green-400 text-black"
+                          : "text-white/50"
+                      }`}
+                    >
+                      IT
+                    </button>
+                  </div>
+
+                  <button
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setCartOpen(true);
+                    }}
+                    className="mt-4 w-fit border border-green-400/40 px-6 py-4 text-left text-xl font-black uppercase tracking-[0.25em] text-green-400"
+                  >
+                    {t.cart} (
+                    {cart.reduce((total, item) => total + item.quantity, 0)})
+                  </button>
+                </nav>
+
+                <div className="flex gap-6 text-2xl text-white/60">
+                  <a
+                    href="https://www.instagram.com/iragreenofficial/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    href="https://open.spotify.com/artist/58eTshTblzJjY7vJ2KVzhq"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaSpotify />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/c/iragreenofficial/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaYoutube />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@ira_green_official"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTiktok />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/iragreenofficial/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebookF />
+                  </a>
+                </div>
+              </motion.div>
+            )}
         <div
           className="pointer-events-none fixed inset-0 z-[1] transition duration-300"
           style={{
@@ -596,124 +714,7 @@ export default function Home() {
               </button>
             </div>
 
-            {menuOpen && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="fixed inset-0 z-[1000] flex min-h-screen flex-col bg-black/95 px-8 py-8 backdrop-blur-2xl md:hidden"
-              >
-                <div className="mb-16 flex items-center justify-between">
-                  <Image
-                    src="/ira-logo.png"
-                    alt="Ira Green"
-                    width={56}
-                    height={56}
-                    className="h-12 w-auto"
-                  />
 
-                  <button
-                    onClick={() => setMenuOpen(false)}
-                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white"
-                    aria-label="Close menu"
-                  >
-                    <HiX size={24} />
-                  </button>
-                </div>
-
-                <nav className="flex flex-1 flex-col justify-center gap-8">
-                  {[
-                    [t.navMusic, "#music"],
-                    [t.navLyrics, "#lyrics"],
-                    [t.navConcerts, "#live"],
-                    [t.navShop, "#shop"],
-                    [t.navBio, "#bio"],
-                    [t.navBooking, "#booking"],
-                  ].map(([label, href]) => (
-                    <a
-                      key={label}
-                      href={href}
-                      onClick={() => setMenuOpen(false)}
-                      className="text-5xl font-black uppercase tracking-tight text-white transition hover:text-green-400"
-                    >
-                      {label}
-                    </a>
-                  ))}
-
-                  <div className="flex w-fit overflow-hidden rounded-full border border-white/10 bg-white/5 text-xs font-black uppercase tracking-[0.2em]">
-                    <button
-                      onClick={() => setLanguage("en")}
-                      className={`px-5 py-3 transition ${
-                        language === "en"
-                          ? "bg-green-400 text-black"
-                          : "text-white/50"
-                      }`}
-                    >
-                      EN
-                    </button>
-                    <button
-                      onClick={() => setLanguage("it")}
-                      className={`px-5 py-3 transition ${
-                        language === "it"
-                          ? "bg-green-400 text-black"
-                          : "text-white/50"
-                      }`}
-                    >
-                      IT
-                    </button>
-                  </div>
-
-                  <button
-                    onClick={() => {
-                      setMenuOpen(false);
-                      setCartOpen(true);
-                    }}
-                    className="mt-4 w-fit border border-green-400/40 px-6 py-4 text-left text-xl font-black uppercase tracking-[0.25em] text-green-400"
-                  >
-                    {t.cart} (
-                    {cart.reduce((total, item) => total + item.quantity, 0)})
-                  </button>
-                </nav>
-
-                <div className="flex gap-6 text-2xl text-white/60">
-                  <a
-                    href="https://www.instagram.com/iragreenofficial/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaInstagram />
-                  </a>
-                  <a
-                    href="https://open.spotify.com/artist/58eTshTblzJjY7vJ2KVzhq"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaSpotify />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/c/iragreenofficial/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaYoutube />
-                  </a>
-                  <a
-                    href="https://www.tiktok.com/@ira_green_official"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaTiktok />
-                  </a>
-                  <a
-                    href="https://www.facebook.com/iragreenofficial/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaFacebookF />
-                  </a>
-                </div>
-              </motion.div>
-            )}
           </header>
 
           <div className="fixed right-6 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-5 text-lg md:flex">
