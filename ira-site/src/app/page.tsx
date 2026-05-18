@@ -1125,7 +1125,7 @@ export default function Home() {
               <iframe
                 data-testid="embed-iframe"
                 className="rounded-[1.5rem]"
-                src="https://open.spotify.com/embed/album/0lcgsk4lOpZiN56wrln0AW?utm_source=generator"
+                src="https://open.spotify.com/intl-it/track/2LOgrClSww8uk0Qq31bLuo?si=6f66f3e458274470"
                 width="100%"
                 height="352"
                 frameBorder="0"
