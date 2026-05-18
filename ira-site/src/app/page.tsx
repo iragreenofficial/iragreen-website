@@ -1137,14 +1137,37 @@ export default function Home() {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               />
-              <a
-                href="https://open.spotify.com/intl-it/track/2LOgrClSww8uk0Qq31bLuo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block rounded-[1.5rem] border border-green-400/40 px-6 py-5 text-center text-xs font-black uppercase tracking-[0.25em] text-green-400 transition hover:bg-green-400 hover:text-black md:hidden"
-                >
-                Ascolta Col Cazzo su Spotify
-              </a>
+             <a
+  href="https://open.spotify.com/intl-it/track/2LOgrClSww8uk0Qq31bLuo"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative mx-auto mt-10 block w-full max-w-[340px] overflow-hidden rounded-[2rem] border border-green-400/20 bg-black md:hidden"
+>
+  <div className="relative h-[180px] w-full overflow-hidden">
+    <Image
+      src="/col-cazzo-cover.jpg"
+      alt="Col Cazzo"
+      fill
+      className="object-cover transition duration-700 group-hover:scale-110"
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+
+    <div className="absolute bottom-0 left-0 right-0 p-6">
+      <p className="text-[10px] font-black uppercase tracking-[0.35em] text-green-400">
+        New Single
+      </p>
+
+      <h3 className="mt-2 text-3xl font-black uppercase text-white">
+        Col Cazzo
+      </h3>
+
+      <div className="mt-4 inline-flex items-center gap-2 border border-white/20 bg-black/40 px-4 py-2 text-[10px] font-black uppercase tracking-[0.25em] text-white backdrop-blur transition group-hover:border-green-400 group-hover:bg-green-400 group-hover:text-black">
+        Ascolta ora →
+      </div>
+    </div>
+  </div>
+</a>
             </div>
           </motion.div>
         </section>
