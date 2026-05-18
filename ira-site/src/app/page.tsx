@@ -760,7 +760,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="relative flex h-full items-center justify-center px-6 text-center">
+          <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
             <motion.div {...reveal}>
               <p className="mb-5 text-xs uppercase tracking-[0.45em] text-zinc-400">
                 {t.heroEyebrow}
