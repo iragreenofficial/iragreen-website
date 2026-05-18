@@ -782,7 +782,6 @@ export default function Home() {
               </p>
 
               <div className="relative z-[200] mt-10 flex justify-center gap-4">
-
                 <a
                   href="#music"
                   className="bg-white px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-black transition hover:bg-green-400"
@@ -800,6 +799,7 @@ export default function Home() {
                   {t.heroBooking}
                 </button>
               </div>
+              
             </motion.div>
           </div>
         </section>
