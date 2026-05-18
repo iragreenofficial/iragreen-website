@@ -789,12 +789,15 @@ export default function Home() {
                   {t.heroListen}
                 </a>
 
-                <a
-                  href="#booking"
-                  className="border border-white/40 bg-black/20 px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] backdrop-blur transition hover:border-green-400 hover:bg-green-400 hover:text-black"
-                >
+                <button
+                  type="button"
+                  onClick={() => {
+                    document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="relative z-[9999] border border-white/40 bg-black/20 px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] backdrop-blur transition hover:border-green-400 hover:bg-green-400 hover:text-black"
+                  >
                   {t.heroBooking}
-                </a>
+                </button>
               </div>
             </motion.div>
           </div>
