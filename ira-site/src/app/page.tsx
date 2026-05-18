@@ -1810,18 +1810,39 @@ export default function Home() {
                   </div>
                 </div>
 
-                <a
-                  href={paypalUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`mt-6 block w-full px-7 py-4 text-center text-xs font-black uppercase tracking-[0.25em] transition ${
-                    cart.length > 0
-                      ? "bg-green-400 text-black hover:bg-white"
-                      : "pointer-events-none bg-zinc-800 text-zinc-600"
-                  }`}
-                >
-                  {t.payPaypal}
-                </a>
+<div className="mt-6 grid gap-3 sm:grid-cols-2">
+  <a
+    href={paypalUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`block w-full px-7 py-4 text-center text-xs font-black uppercase tracking-[0.25em] transition ${
+      cart.length > 0
+        ? "bg-green-400 text-black hover:bg-white"
+        : "pointer-events-none bg-zinc-800 text-zinc-600"
+    }`}
+  >
+    {t.payPaypal}
+  </a>
+
+  <a
+    href={paypalUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`block w-full border px-7 py-4 text-center text-xs font-black uppercase tracking-[0.25em] transition ${
+      cart.length > 0
+        ? "border-white/25 bg-black text-white hover:border-green-400 hover:bg-green-400 hover:text-black"
+        : "pointer-events-none border-zinc-800 bg-zinc-900 text-zinc-600"
+    }`}
+  >
+    {language === "it" ? "Paga con Carta" : "Pay by Card"}
+  </a>
+</div>
+
+<p className="mt-4 text-center text-[11px] uppercase tracking-[0.18em] text-zinc-500">
+  {language === "it"
+    ? "Puoi pagare con carta anche senza account PayPal."
+    : "You can pay by card without a PayPal account."}
+</p>
 
                 <p className="mt-4 text-xs leading-relaxed text-zinc-600">
                   {t.cartNote}
