@@ -455,7 +455,7 @@ export default function Home() {
       <main className="relative min-h-screen overflow-x-hidden bg-black text-white selection:bg-green-400 selection:text-black">
         <button
           onClick={() => setMenuOpen(true)}
-          className="fixed right-4 top-4 z-[95] flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/75 text-white shadow-2xl shadow-black/70 backdrop-blur-xl md:hidden"
+          className="fixed right-4 top-4 z-[999] flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/75 text-white shadow-2xl shadow-black/70 backdrop-blur-xl md:hidden"
           aria-label="Open menu"
           >
   <HiMenu size={22} />
