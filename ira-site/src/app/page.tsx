@@ -717,7 +717,7 @@ export default function Home() {
 
           </header>
 
-          <div className="fixed right-6 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-5 text-lg lg:flex">
+          <div className="pointer-events-none fixed right-6 top-1/2 z-20 hidden -translate-y-1/2 flex-col gap-5 text-lg xl:flex">
             <a
               href="https://www.instagram.com/iragreenofficial/"
               target="_blank"
@@ -781,7 +781,7 @@ export default function Home() {
                 {t.heroClaim}
               </p>
 
-              <div className="mt-10 flex justify-center gap-4">
+              <div className="relative z-[200] mt-10 flex justify-center gap-4">
                 <a
                   href="#music"
                   className="bg-white px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-black transition hover:bg-green-400"
