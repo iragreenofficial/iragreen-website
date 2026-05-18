@@ -717,7 +717,7 @@ export default function Home() {
 
           </header>
 
-          <div className="fixed right-6 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-5 text-lg md:flex">
+          <div className="fixed right-6 top-1/2 z-50 hidden -translate-y-1/2 flex-col gap-5 text-lg lg:flex">
             <a
               href="https://www.instagram.com/iragreenofficial/"
               target="_blank"
