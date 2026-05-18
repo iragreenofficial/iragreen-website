@@ -601,7 +601,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 z-50 flex flex-col bg-black/95 px-8 py-8 backdrop-blur-2xl md:hidden"
+                className="fixed inset-0 z-[1000] flex min-h-screen flex-col bg-black/95 px-8 py-8 backdrop-blur-2xl md:hidden"
               >
                 <div className="mb-16 flex items-center justify-between">
                   <Image
