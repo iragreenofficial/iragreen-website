@@ -593,7 +593,7 @@ export default function Home() {
 
         <div className="pointer-events-none fixed inset-0 z-[3] bg-[radial-gradient(circle_at_50%_0%,rgba(34,197,94,0.10),transparent_32%),radial-gradient(circle_at_50%_100%,rgba(255,255,255,0.04),transparent_35%)]" />
 
-        <section className="relative z-10 h-screen w-full overflow-hidden">
+        <section className="relative h-screen w-full overflow-hidden">
           <video
             autoPlay
             muted
@@ -760,7 +760,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
+          <div className="relative flex h-full items-center justify-center px-6 text-center">
             <motion.div {...reveal}>
               <p className="mb-5 text-xs uppercase tracking-[0.45em] text-zinc-400">
                 {t.heroEyebrow}
